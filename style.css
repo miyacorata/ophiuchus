@@ -36,6 +36,15 @@ header{
     text-shadow: 0 0 var(--main-shadow-blur) var(--main-shadow-color);
 }
 
+h3{
+    margin: 3px 0;
+
+}
+h3 > img{
+    height: 1em;
+    margin-right: 5px;
+}
+
 #system{
     text-align: center;
     padding: 0 20px;
@@ -62,11 +71,13 @@ header{
 
 main{
     filter: drop-shadow(0 0 var(--main-shadow-blur) var(--main-shadow-color));
+    display: flex;
 }
 .window{
     border: solid 3px var(--main-color);
     border-top: double 8px var(--main-color);
     border-radius: 2px;
+    margin: 4px;
 }
 .window > .title:first-child{
     display: inline-block;
@@ -85,5 +96,29 @@ main{
     font-size: 18px;
 }
 .window > .body{
+    padding: 5px;
+}
+
+.subwindow{
     padding: 10px;
+    border: solid 3px var(--main-color);
+}
+.subwindow > img:first-child{
+    display: block;
+    width: 50px;
+    margin: 5px 30px auto 20px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px 3px;
+}
+thead > tr > th{
+    padding: 1px;
+    background: var(--main-color);
+    color: #111114;
+}
+tbody > tr > td:last-child{
+    font-family: monospace;
 }
