@@ -5,6 +5,7 @@
     <title>Ophiuchus</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./js/md5.min.js"></script>
+    <script src="./js/clock.js"></script>
     <script src="./ophiuchus.js"></script>
 </head>
 <body>
@@ -15,43 +16,97 @@
             <div id="version">Status Monitor Ver1.0.0</div>
         </div>
         <div id="clock">
-            <div id="date">March 30th, 2020</div>
-            <div id="time">22:13:41</div>
+            <div id="date">Loading</div>
+            <div id="time">00:00:00</div>
         </div>
     </header>
     <main>
-        <div class="window" id="websystem" style="width: 100%;">
+        <div class="window" id="social" style="width: 100%;">
             <div class="title">
-                <h2>WebSystem</h2>
+                <h2>Fediverse</h2>
             </div>
             <div class="body">
-                <div class="subwindow">WIP</div>
+                <div class="subwindow" style="display: flex;">
+                    <img src="https://mstdn.miyacorata.net/favicon.ico">
+                    <div style="width:100%">
+                        <h3 id="miyano_sta_title" class="online">mstdn.miyacorata.net</h3>
+                        <table>
+                            <thead>
+                                <th style="width: 130px;">Key</th>
+                                <th>Value</th>
+                                <th style="width: 340px;">MD5</th>
+                            </thead>
+                            <tbody id="miyano_sta">
+                                <tr>
+                                    <td colspan="3">Loading</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="subwindow" style="display: flex;">
+                    <img src="https://imastodon.net/favicon.ico">
+                    <div style="width:100%">
+                        <h3 id="imastodon_title">imastodon.net</h3>
+                        <table>
+                            <thead>
+                                <th style="width: 130px;">Key</th>
+                                <th>Value</th>
+                                <th style="width: 340px;">MD5</th>
+                            </thead>
+                            <tbody id="imastodon">
+                                <tr>
+                                    <td colspan="3">Loading</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="subwindow" style="display: flex;">
+                    <img src="https://twista.283.cloud/favicon.ico">
+                    <div style="width:100%">
+                        <h3 id="twista_title">twista.283.cloud</h3>
+                        <table>
+                            <thead>
+                                <th style="width: 130px;">Key</th>
+                                <th>Value</th>
+                                <th style="width: 340px;">MD5</th>
+                            </thead>
+                            <tbody id="twista">
+                                <tr>
+                                    <td colspan="3">Loading</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="subwindow" style="display: flex;">
+                    <img src="https://misskey.kurume-nct.com/favicon.ico">
+                    <div style="width:100%">
+                        <h3 id="prolabmisskey_title">misskey.kurume-nct.com</h3>
+                        <table>
+                            <thead>
+                                <th style="width: 130px;">Key</th>
+                                <th>Value</th>
+                                <th style="width: 340px;">MD5</th>
+                            </thead>
+                            <tbody id="prolabmisskey">
+                                <tr>
+                                    <td colspan="3">Loading</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="right" style="width: 100%;">
-            <div class="window" id="social">
+            <div class="window" id="websystem">
                 <div class="title">
-                    <h2>Fediverse</h2>
+                    <h2>WebSystem</h2>
                 </div>
                 <div class="body">
-                    <div class="subwindow" style="display: flex;">
-                        <img src="https://mstdn.miyacorata.net/favicon.ico">
-                        <div style="width:100%">
-                            <h3>mstdn.miyacorata.net</h3>
-                            <table>
-                                <thead>
-                                    <th style="width: 130px;">Key</th>
-                                    <th>Value</th>
-                                    <th style="width: 340px;">MD5</th>
-                                </thead>
-                                <tbody id="miyano_sta">
-                                    <tr>
-                                        <td colspan="3">Loading</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    <div class="subwindow">WIP</div>
                 </div>
             </div>
         </div>

@@ -11,11 +11,14 @@ body{
     background: black;
     color: var(--main-color);
     font-size: 20px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 #app{
     transform: scale(0.87);
-    transform-origin: center top;
+    transform-origin: 960px top;
     width: 1920px;
     height: 1080px;
     overflow: hidden;
@@ -38,11 +41,7 @@ header{
 
 h3{
     margin: 3px 0;
-
-}
-h3 > img{
-    height: 1em;
-    margin-right: 5px;
+    font-size: 24px;
 }
 
 #system{
@@ -79,29 +78,34 @@ main{
     border-radius: 2px;
     margin: 4px;
 }
-.window > .title:first-child{
+.window > .title{
     display: inline-block;
     background: var(--window-title-background);
     border-left: solid 6px var(--main-color);
 }
-.window > .title:first-child > h2{
+.window > .title > h2{
     margin: 0;
     padding: 0 10px;
     color: rgb(240, 240, 240);
     font-size: 30px;
 }
-.window > .title:first-child > h2::before{
+.window > .title > h2::before{
     content: 'STATUS';
     padding: 2px 5px 0 0;
     font-size: 18px;
 }
 .window > .body{
-    padding: 5px;
+    padding: 0 5px;
+}
+
+hr{
+    border: solid 2px var(--main-color);
 }
 
 .subwindow{
     padding: 10px;
     border: solid 3px var(--main-color);
+    margin: 5px 0;
 }
 .subwindow > img:first-child{
     display: block;
@@ -121,4 +125,28 @@ thead > tr > th{
 }
 tbody > tr > td:last-child{
     font-family: monospace;
+}
+
+h3[id$='title']{
+    position: relative;
+}
+h3[id$='title'].online::after{
+    content: 'ONLINE';
+    position: absolute;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: yellow;
+    font-size: 20px;
+    padding: 1px 6px;
+    border: solid 1.5px yellow;
+}
+h3[id$='title'].error::after{
+    content: 'ERROR!';
+    position: absolute;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: red;
+    font-size: 20px;
+    padding: 1px 6px;
+    border: solid 1.5px red;
 }
